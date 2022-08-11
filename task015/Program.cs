@@ -21,11 +21,20 @@ catch
 string dayStatusNumber(int day)
 {
     string retValue;
-    if (day ==6 || day ==7) retValue ="Выходной";
-    else 
+    if (day == 6 || day == 7)
     {
-        if (day <=7) retValue ="Рабочий";
-        else retValue ="Ошибка ввода";
+        retValue = "Выходной";
+    }
+    else
+    {
+        if (day < 6 && day > 0)
+        {
+            retValue = "Рабочий";
+        }
+        else
+        {
+            retValue = "Ошибка ввода";
+        }
     }
     return retValue;
 }
