@@ -36,7 +36,7 @@ catch
 
 double lengtSegment(Point a, Point b)
 {
-    double outValue = Math.Round(Math.Sqrt(Math.Pow((A.x - B.x), 2) + Math.Pow((A.y - B.y), 2) + Math.Pow((A.z - B.z), 2)), 2);
+    double outValue = Math.Round(Math.Sqrt(Math.Pow((a.x - b.x), 2) + Math.Pow((a.y - b.y), 2) + Math.Pow((a.z - b.z), 2)), 2);
 
     return outValue;
 }
