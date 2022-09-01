@@ -42,13 +42,12 @@ int[,,] GetArray(int rows, int columns1, int columns2, int minValue, int maxValu
         {
             for (int k = 0; k < columns2; k++)
             {
-                value = new Random().Next(minValue, maxValue + 1);
-                if (!DoublingNumber(array, value))
+                do
                 {
-                    array[i, j, k] = value;
-                }
+                    value = new Random().Next(minValue, maxValue + 1);
+                } while (DoublingNumber(array, value));
+                array[i, j, k] = value;
             }
-
         }
     }
     return array;
